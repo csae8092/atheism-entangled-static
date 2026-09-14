@@ -53,14 +53,13 @@
                         <h1>
                             <xsl:value-of select="$doc_title"/>
                         </h1>
-                        
+                        <div class="text-center p-1"><span id="counter1"></span> of <span id="counter2"></span> Keywords</div>
                         <table id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
-                                    <th scope="col" tabulator-headerFilter="input">Keyword</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-formatter="html" tabulator-minWidth="350">Keyword</th>
                                     <th scope="col" tabulator-headerFilter="input">Definition</th>
-                                    <th scope="col" tabulator-headerFilter="input">Nr of mentions</th>
+                                    <th scope="col" tabulator-headerFilter="input">mentions</th>
                                     <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
@@ -72,20 +71,17 @@
                                     <tr>
                                         <td>
                                             <a>
-                                              <xsl:attribute name="href">
-                                              <xsl:value-of select="concat($id, '.html')"/>
-                                              </xsl:attribute>
-                                              <i class="bi bi-link-45deg"/>
+                                                <xsl:attribute name="href">
+                                                    <xsl:value-of select="concat($id, '.html')"/>
+                                                </xsl:attribute>
+                                                <xsl:value-of select=".//tei:orth[1]/text()"/>
                                             </a>
-                                        </td>
-                                        <td>
-                                            <xsl:value-of select=".//tei:orth[1]/text()"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select=".//tei:def[1]//text()"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="count(.//tei:note[@type='mentions'])"/>
+                                            <xsl:value-of select="count(.//tei:note[@target])"/>
                                         </td>
                                         <td>
                                             <xsl:value-of select="$id"/>
@@ -98,7 +94,7 @@
 
                         <div class="text-center p-4">
                             <xsl:call-template name="blockquote">
-                                <xsl:with-param name="pageId" select="'listbibl.html'"/>
+                                <xsl:with-param name="pageId" select="'listkeyword.html'"/>
                             </xsl:call-template>
                         </div>
                     </div>
@@ -134,7 +130,7 @@
                                         <a href="index.html"><xsl:value-of select="$project_short_title"/></a>
                                     </li>
                                     <li class="breadcrumb-item">
-                                        <a href="listbibl.html"><xsl:value-of select="$doc_title"/></a>
+                                        <a href="{$link}"><xsl:value-of select="$doc_title"/></a>
                                     </li>
                                 </ol>
                             </nav>

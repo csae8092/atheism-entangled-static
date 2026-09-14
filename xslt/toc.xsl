@@ -47,38 +47,40 @@
                     </nav>
                     <div class="container">
                         <h1><xsl:value-of select="$doc_title"/></h1>
+                        <div class="text-center p-1"><span id="counter1"></span> of <span id="counter2"></span> Documents</div>
                         <table id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="20" tabulator-formatter="html" tabulator-headerSort="false" tabulator-download="false">#</th>
-                                    <th scope="col" tabulator-headerFilter="input">Titel</th>
-                                    <th scope="col" tabulator-headerFilter="input">Dateinname</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-formatter="html">Title</th>
+                                    <th scope="col" tabulator-headerFilter="input">Country</th>
+                                    <th scope="col" tabulator-headerFilter="input">Date</th>
+                                    <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <xsl:for-each
                                     select="collection('../data/editions?select=*.xml')//tei:TEI">
                                     <xsl:variable name="full_path">
-                                        <xsl:value-of select="document-uri(/)"/>
+                                        <xsl:value-of select="replace(@xml:id, '.xml', '.html')"/>
                                     </xsl:variable>
                                     <tr>
                                         <td>
                                             <a>
                                                 <xsl:attribute name="href">
-                                                  <xsl:value-of
-                                                  select="replace(tokenize($full_path, '/')[last()], '.xml', '.html')"
-                                                  />
+                                                    <xsl:value-of select="$full_path"/>
                                                 </xsl:attribute>
-                                                <i class="bi bi-link-45deg"/>
+                                                <xsl:value-of select=".//tei:titleStmt/tei:title[@level='a']/text()"/>
                                             </a>
+                                            
                                         </td>
                                         <td>
-                                            <xsl:value-of
-                                                select=".//tei:titleStmt/tei:title[1]/text()"/>
+                                            <xsl:value-of select=".//tei:title[@type='country']"/>
                                         </td>
                                         <td>
-                                            <xsl:value-of select="tokenize($full_path, '/')[last()]"
-                                            />
+                                            <xsl:value-of select=".//tei:title[@type='date']"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of select="$full_path"/>
                                         </td>
                                     </tr>
                                 </xsl:for-each>
