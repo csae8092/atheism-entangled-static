@@ -47,10 +47,21 @@
                             <li class="nav-item">
                                 <a title="API" class="nav-link" href="api.xml">API</a>
                             </li>
-                            <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="search.html">Search</a>
-                            </li>
                         </ul>
+                        <div class="d-none d-lg-block">
+                            <form class="d-flex" role="search" action="search.html" method="get">
+                                <label for="search-input" class="visually-hidden">Search</label>
+                                <input
+                                    class="form-control me-2"
+                                    type="text"
+                                    id="search-input"
+                                    name="atheism-entangled-static[query]"
+                                    placeholder="Search"
+                                    aria-label="Search"
+                                />
+                                <button class="btn btn-primary" type="submit">Searchn</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </nav>

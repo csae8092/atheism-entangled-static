@@ -1,6 +1,6 @@
 const indexName = "atheism-entangled-static";
 
-const apiKey = "haJHoI2FYpJb1H3USgDonHJAQKOr48oz"; /* change this */
+const apiKey = "haJHoI2FYpJb1H3USgDonHJAQKOr48oz";
 
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
@@ -35,6 +35,10 @@ const searchClient = typesenseInstantsearchAdapter.searchClient;
 const search = instantsearch({
   indexName: indexName,
   searchClient,
+  routing: {
+    router: instantsearch.routers.history(),
+    stateMapping: instantsearch.stateMappings.simple(),
+  },
 });
 
 search.addWidgets([
