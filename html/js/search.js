@@ -1,6 +1,6 @@
 const indexName = "atheism-entangled-static";
 
-const apiKey = "0drlT8CHD6T9z8QxQjYXvSWT2dZ75nPv"; /* change this */
+const apiKey = "haJHoI2FYpJb1H3USgDonHJAQKOr48oz"; /* change this */
 
 const typesenseInstantsearchAdapter = new TypesenseInstantSearchAdapter({
   server: {
@@ -80,7 +80,7 @@ search.addWidgets([
               >`
           )}
           <br />
-          ${hit.bibl_entities.map(
+          ${hit.keyword_entities.map(
             (item) =>
               html`<a href="${item.id}.html" class="pe-2 custom-link"
                 ><i class="bi bi-book pe-1"></i>${item.label}</a
@@ -126,7 +126,7 @@ search.addWidgets([
       return state.query.length === 0;
     },
     templates: {
-      header: "Personen",
+      header: "Persons",
     },
   })(instantsearch.widgets.refinementList)({
     container: "#rf-persons",
@@ -135,7 +135,7 @@ search.addWidgets([
     showMore: true,
     showMoreLimit: 50,
     limit: 10,
-    searchablePlaceholder: "Suche nach Personen",
+    searchablePlaceholder: "Search for Persons",
     cssClasses: DEFAULT_CSS_CLASSES,
   }),
 
@@ -144,7 +144,7 @@ search.addWidgets([
       return state.query.length === 0;
     },
     templates: {
-      header: "Orte",
+      header: "Places",
     },
   })(instantsearch.widgets.refinementList)({
     container: "#rf-places",
@@ -153,7 +153,7 @@ search.addWidgets([
     showMore: true,
     showMoreLimit: 50,
     limit: 10,
-    searchablePlaceholder: "Suche nach Orten",
+    searchablePlaceholder: "Search for Places",
     cssClasses: DEFAULT_CSS_CLASSES,
   }),
 
@@ -162,16 +162,16 @@ search.addWidgets([
       return state.query.length === 0;
     },
     templates: {
-      header: "Literatur",
+      header: "Keywords",
     },
   })(instantsearch.widgets.refinementList)({
     container: "#rf-works",
-    attribute: "bibl_entities.label",
+    attribute: "keyword_entities.label",
     searchable: true,
     showMore: true,
     showMoreLimit: 50,
     limit: 10,
-    searchablePlaceholder: "Suche nach Literatur",
+    searchablePlaceholder: "Search for Keywords",
     cssClasses: DEFAULT_CSS_CLASSES,
   }),
 
@@ -202,9 +202,9 @@ search.addWidgets([
     },
     transformItems(items) {
       const labelMap = {
-        "person_entities.label": "Personen",
-        "place_entities.label": "Orte",
-        "bibl_entities.label": "Literatur",
+        "person_entities.label": "Persons",
+        "place_entities.label": "Places",
+        "keyword_entities.label": "Keywords",
       };
 
       return items.map((item) => ({
