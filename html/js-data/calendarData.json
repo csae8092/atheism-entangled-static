@@ -1,0 +1,100 @@
+[
+  {
+    "date": "1783-04-22",
+    "label": "A Quiet Reading in Vienna",
+    "link": "aut-001.html",
+    "kind": "Text",
+    "country": "Austria"
+  },
+  {
+    "date": "1815-02-11",
+    "label": "Lantern Notes from Graz",
+    "link": "aut-002.html",
+    "kind": "Text",
+    "country": "Austria"
+  },
+  {
+    "date": "1847-08-05",
+    "label": "Paper and Candle in Salzburg",
+    "link": "aut-003.html",
+    "kind": "Text",
+    "country": "Austria"
+  },
+  {
+    "date": "1828-03-14",
+    "label": "City Notes from Brussels",
+    "link": "bel-002.html",
+    "kind": "Text",
+    "country": "Belgium"
+  },
+  {
+    "date": "1869-10-23",
+    "label": "A Quiet Ledger in Liège",
+    "link": "bel-003.html",
+    "kind": "Text",
+    "country": "Belgium"
+  },
+  {
+    "date": "1808-06-17",
+    "label": "Sunlit Notes in Madrid",
+    "link": "esp-001.html",
+    "kind": "Text",
+    "country": "Spain"
+  },
+  {
+    "date": "1841-02-09",
+    "label": "A Small Debate in Seville",
+    "link": "esp-002.html",
+    "kind": "Text",
+    "country": "Spain"
+  },
+  {
+    "date": "1885-12-21",
+    "label": "Last Light in Valencia",
+    "link": "esp-003.html",
+    "kind": "Text",
+    "country": "Spain"
+  },
+  {
+    "date": "1802-07-15",
+    "label": "Glass and Paper in Paris",
+    "link": "fra-001.html",
+    "kind": "Text",
+    "country": "France"
+  },
+  {
+    "date": "1837-04-28",
+    "label": "Market Morning in Lyon",
+    "link": "fra-002.html",
+    "kind": "Text",
+    "country": "France"
+  },
+  {
+    "date": "1882-09-13",
+    "label": "Night Discussion in Marseille",
+    "link": "fra-003.html",
+    "kind": "Text",
+    "country": "France"
+  },
+  {
+    "date": "1794-01-08",
+    "label": "Window Light in Turin",
+    "link": "ita-001.html",
+    "kind": "Text",
+    "country": "Italy"
+  },
+  {
+    "date": "1823-11-19",
+    "label": "Evening Notes in Milan",
+    "link": "ita-002.html",
+    "kind": "Text",
+    "country": "Italy"
+  },
+  {
+    "date": "1874-06-02",
+    "label": "A Narrow Hall in Florence",
+    "link": "ita-003.html",
+    "kind": "Text",
+    "country": "Italy"
+  }
+]

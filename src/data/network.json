@@ -1,0 +1,612 @@
+{
+  "nodes": [
+    {
+      "id": "aut-001.xml",
+      "label": "A Quiet Reading in Vienna",
+      "type": "bibl"
+    },
+    {
+      "id": "1783-04-22",
+      "label": "1783-04-22",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-001",
+      "label": "Vienna",
+      "type": "place"
+    },
+    {
+      "id": "aut-002.xml",
+      "label": "Lantern Notes from Graz",
+      "type": "bibl"
+    },
+    {
+      "id": "1815-02-11",
+      "label": "1815-02-11",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-002",
+      "label": "Mantua",
+      "type": "place"
+    },
+    {
+      "id": "aut-003.xml",
+      "label": "Paper and Candle in Salzburg",
+      "type": "bibl"
+    },
+    {
+      "id": "1847-08-05",
+      "label": "1847-08-05",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-003",
+      "label": "Amsterdam",
+      "type": "place"
+    },
+    {
+      "id": "bel-001.xml",
+      "label": "Meeting in the Public Square",
+      "type": "bibl"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-004",
+      "label": "The Hague",
+      "type": "place"
+    },
+    {
+      "id": "bel-002.xml",
+      "label": "City Notes from Brussels",
+      "type": "bibl"
+    },
+    {
+      "id": "1828-03-14",
+      "label": "1828-03-14",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-005",
+      "label": "Edinburgh",
+      "type": "place"
+    },
+    {
+      "id": "bel-003.xml",
+      "label": "A Quiet Ledger in Liège",
+      "type": "bibl"
+    },
+    {
+      "id": "1869-10-23",
+      "label": "1869-10-23",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-006",
+      "label": "Paris",
+      "type": "place"
+    },
+    {
+      "id": "esp-001.xml",
+      "label": "Sunlit Notes in Madrid",
+      "type": "bibl"
+    },
+    {
+      "id": "1808-06-17",
+      "label": "1808-06-17",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-007",
+      "label": "Ferney",
+      "type": "place"
+    },
+    {
+      "id": "esp-002.xml",
+      "label": "A Small Debate in Seville",
+      "type": "bibl"
+    },
+    {
+      "id": "1841-02-09",
+      "label": "1841-02-09",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-001",
+      "label": "Vienna",
+      "type": "place"
+    },
+    {
+      "id": "esp-003.xml",
+      "label": "Last Light in Valencia",
+      "type": "bibl"
+    },
+    {
+      "id": "1885-12-21",
+      "label": "1885-12-21",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-002",
+      "label": "Mantua",
+      "type": "place"
+    },
+    {
+      "id": "fra-001.xml",
+      "label": "Glass and Paper in Paris",
+      "type": "bibl"
+    },
+    {
+      "id": "1802-07-15",
+      "label": "1802-07-15",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-003",
+      "label": "Amsterdam",
+      "type": "place"
+    },
+    {
+      "id": "fra-002.xml",
+      "label": "Market Morning in Lyon",
+      "type": "bibl"
+    },
+    {
+      "id": "1837-04-28",
+      "label": "1837-04-28",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-004",
+      "label": "The Hague",
+      "type": "place"
+    },
+    {
+      "id": "fra-003.xml",
+      "label": "Night Discussion in Marseille",
+      "type": "bibl"
+    },
+    {
+      "id": "1882-09-13",
+      "label": "1882-09-13",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-005",
+      "label": "Edinburgh",
+      "type": "place"
+    },
+    {
+      "id": "ita-001.xml",
+      "label": "Window Light in Turin",
+      "type": "bibl"
+    },
+    {
+      "id": "1794-01-08",
+      "label": "1794-01-08",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-001",
+      "label": "Gonzaga-Nevers, Eleonora",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-006",
+      "label": "Paris",
+      "type": "place"
+    },
+    {
+      "id": "ita-002.xml",
+      "label": "Evening Notes in Milan",
+      "type": "bibl"
+    },
+    {
+      "id": "1823-11-19",
+      "label": "1823-11-19",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-002",
+      "label": "Spinoza, Baruch",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-007",
+      "label": "Ferney",
+      "type": "place"
+    },
+    {
+      "id": "ita-003.xml",
+      "label": "A Narrow Hall in Florence",
+      "type": "bibl"
+    },
+    {
+      "id": "1874-06-02",
+      "label": "1874-06-02",
+      "type": "year"
+    },
+    {
+      "id": "ea-pers-004",
+      "label": "Voltaire, François-Marie",
+      "type": "person"
+    },
+    {
+      "id": "ea-pers-003",
+      "label": "Hume, David",
+      "type": "person"
+    },
+    {
+      "id": "ea-place-001",
+      "label": "Vienna",
+      "type": "place"
+    }
+  ],
+  "edges": [
+    [
+      "aut-001.xml",
+      "1783-04-22"
+    ],
+    [
+      "aut-001.xml",
+      "ea-pers-001"
+    ],
+    [
+      "aut-001.xml",
+      "ea-pers-002"
+    ],
+    [
+      "aut-001.xml",
+      "ea-place-001"
+    ],
+    [
+      "aut-002.xml",
+      "1815-02-11"
+    ],
+    [
+      "aut-002.xml",
+      "ea-pers-003"
+    ],
+    [
+      "aut-002.xml",
+      "ea-pers-002"
+    ],
+    [
+      "aut-002.xml",
+      "ea-place-002"
+    ],
+    [
+      "aut-003.xml",
+      "1847-08-05"
+    ],
+    [
+      "aut-003.xml",
+      "ea-pers-004"
+    ],
+    [
+      "aut-003.xml",
+      "ea-pers-003"
+    ],
+    [
+      "aut-003.xml",
+      "ea-place-003"
+    ],
+    [
+      "bel-001.xml",
+      "ea-pers-001"
+    ],
+    [
+      "bel-001.xml",
+      "ea-pers-004"
+    ],
+    [
+      "bel-001.xml",
+      "ea-place-004"
+    ],
+    [
+      "bel-002.xml",
+      "1828-03-14"
+    ],
+    [
+      "bel-002.xml",
+      "ea-pers-001"
+    ],
+    [
+      "bel-002.xml",
+      "ea-pers-002"
+    ],
+    [
+      "bel-002.xml",
+      "ea-place-005"
+    ],
+    [
+      "bel-003.xml",
+      "1869-10-23"
+    ],
+    [
+      "bel-003.xml",
+      "ea-pers-003"
+    ],
+    [
+      "bel-003.xml",
+      "ea-pers-002"
+    ],
+    [
+      "bel-003.xml",
+      "ea-place-006"
+    ],
+    [
+      "esp-001.xml",
+      "1808-06-17"
+    ],
+    [
+      "esp-001.xml",
+      "ea-pers-004"
+    ],
+    [
+      "esp-001.xml",
+      "ea-pers-003"
+    ],
+    [
+      "esp-001.xml",
+      "ea-place-007"
+    ],
+    [
+      "esp-002.xml",
+      "1841-02-09"
+    ],
+    [
+      "esp-002.xml",
+      "ea-pers-001"
+    ],
+    [
+      "esp-002.xml",
+      "ea-pers-004"
+    ],
+    [
+      "esp-002.xml",
+      "ea-place-001"
+    ],
+    [
+      "esp-003.xml",
+      "1885-12-21"
+    ],
+    [
+      "esp-003.xml",
+      "ea-pers-001"
+    ],
+    [
+      "esp-003.xml",
+      "ea-pers-002"
+    ],
+    [
+      "esp-003.xml",
+      "ea-place-002"
+    ],
+    [
+      "fra-001.xml",
+      "1802-07-15"
+    ],
+    [
+      "fra-001.xml",
+      "ea-pers-003"
+    ],
+    [
+      "fra-001.xml",
+      "ea-pers-002"
+    ],
+    [
+      "fra-001.xml",
+      "ea-place-003"
+    ],
+    [
+      "fra-002.xml",
+      "1837-04-28"
+    ],
+    [
+      "fra-002.xml",
+      "ea-pers-004"
+    ],
+    [
+      "fra-002.xml",
+      "ea-pers-003"
+    ],
+    [
+      "fra-002.xml",
+      "ea-place-004"
+    ],
+    [
+      "fra-003.xml",
+      "1882-09-13"
+    ],
+    [
+      "fra-003.xml",
+      "ea-pers-001"
+    ],
+    [
+      "fra-003.xml",
+      "ea-pers-004"
+    ],
+    [
+      "fra-003.xml",
+      "ea-place-005"
+    ],
+    [
+      "ita-001.xml",
+      "1794-01-08"
+    ],
+    [
+      "ita-001.xml",
+      "ea-pers-001"
+    ],
+    [
+      "ita-001.xml",
+      "ea-pers-002"
+    ],
+    [
+      "ita-001.xml",
+      "ea-place-006"
+    ],
+    [
+      "ita-002.xml",
+      "1823-11-19"
+    ],
+    [
+      "ita-002.xml",
+      "ea-pers-003"
+    ],
+    [
+      "ita-002.xml",
+      "ea-pers-002"
+    ],
+    [
+      "ita-002.xml",
+      "ea-place-007"
+    ],
+    [
+      "ita-003.xml",
+      "1874-06-02"
+    ],
+    [
+      "ita-003.xml",
+      "ea-pers-004"
+    ],
+    [
+      "ita-003.xml",
+      "ea-pers-003"
+    ],
+    [
+      "ita-003.xml",
+      "ea-place-001"
+    ]
+  ]
+}

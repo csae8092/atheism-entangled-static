@@ -44,6 +44,17 @@
                                     </li>
                                 </ul>
                             </li>
+                            <li class="nav-item dropdown disabled">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Analysis</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="calendar.html">Calendar</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="network.html">Network</a>
+                                    </li>
+                                </ul>
+                            </li>
                             <li class="nav-item">
                                 <a title="API" class="nav-link" href="api.xml">API</a>
                             </li>
@@ -54,12 +65,12 @@
                                 <input
                                     class="form-control me-2"
                                     type="text"
-                                    id="search-input"
+                                    id="nav-search-input"
                                     name="atheism-entangled-static[query]"
                                     placeholder="Search"
                                     aria-label="Search"
                                 />
-                                <button class="btn btn-primary" type="submit">Searchn</button>
+                                <button class="btn btn-primary" type="submit">Search</button>
                             </form>
                         </div>
                     </div>
