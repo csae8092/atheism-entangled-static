@@ -2,6 +2,31 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tei="http://www.tei-c.org/ns/1.0"
     version="2.0" exclude-result-prefixes="xsl tei xs">
+    
+    <xsl:template match="tei:entry" name="keyword_detail">
+        <dl>
+            <dt>Keyword</dt>
+            <dd>
+                <xsl:value-of select=".//tei:orth"/>
+            </dd>
+            <dt>Definition</dt>
+            <dd>
+                <xsl:value-of select=".//tei:def"/>
+            </dd>
+            
+            <xsl:if test="./tei:noteGrp/tei:note[@type = 'mentions']">
+                <dt>mentioned in</dt>
+                <xsl:for-each select="./tei:noteGrp/tei:note[@type = 'mentions']">
+                    <dd>
+                        <a href="{replace(@target, '.xml', '.html')}">
+                            <xsl:value-of select="./text()"/>
+                        </a>
+                    </dd>
+                </xsl:for-each>
+            </xsl:if>
+        </dl>
+    </xsl:template>
+    
     <xsl:template match="tei:bibl" name="bibl_detail">
         <dl>
             <xsl:if test="./tei:author">
@@ -46,7 +71,7 @@
                 </xsl:for-each>
             </xsl:if>
             <xsl:if test="./tei:noteGrp/tei:note[@type = 'mentions']">
-                <dt>Erwähnt in</dt>
+                <dt>mentioned in</dt>
                 <xsl:for-each select="./tei:noteGrp/tei:note[@type = 'mentions']">
                     <dd>
                         <a href="{replace(@target, '.xml', '.html')}">
@@ -98,7 +123,7 @@
                 </dd>
             </xsl:if>
             <xsl:if test="./tei:noteGrp/tei:note[@type = 'mentions']">
-                <dt>Erwähnt in</dt>
+                <dt>mentioned in</dt>
                 <xsl:for-each select="./tei:noteGrp/tei:note[@type = 'mentions']">
                     <dd>
                         <a href="{replace(@target, '.xml', '.html')}">
@@ -143,7 +168,7 @@
                 </xsl:for-each>
             </xsl:if>
             <xsl:if test="./tei:noteGrp/tei:note[@type = 'mentions']">
-                <dt>Erwähnt in</dt>
+                <dt>mentioned in</dt>
                 <dd>
                     <xsl:for-each select="./tei:noteGrp/tei:note[@type = 'mentions']">
                         <a href="{replace(@target, '.xml', '.html')}">
@@ -222,7 +247,7 @@
                 </dd>
             </xsl:if>
             <xsl:if test="./tei:noteGrp/tei:note[@type = 'mentions']">
-                <dt>Erwähnt in</dt>
+                <dt>mentioned in</dt>
                 <xsl:for-each select="./tei:noteGrp/tei:note[@type = 'mentions']">
                     <dd>
                         <a href="{replace(@target, '.xml', '.html')}">
