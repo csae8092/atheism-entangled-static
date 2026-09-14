@@ -35,6 +35,7 @@ jobs:
       TYPESENSE_API_KEY: ${{secrets.TYPESENSE_API_KEY}}
       REGISTRY: ghcr.io
       IMAGE_NAME: ${{ github.repository }}
+      PRODUCTION: true
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -48,6 +49,14 @@ jobs:
         run: ant
       - name: Build search index
         run: uv run pyscripts/make_ts_index.py
+      - name: Setup Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: 25
+      - name: Install node packages
+        run: npm install
+      - name: Build JS assets
+        run: npm run build
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
