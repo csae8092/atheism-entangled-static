@@ -4,7 +4,7 @@
     xmlns:tei="http://www.tei-c.org/ns/1.0"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="#all" version="2.0">
     <xsl:template name="nav_bar">
-        <a class="visually-hidden-focusable" href="#main">Zum Inhalt springen</a>
+        <a class="visually-hidden-focusable" href="#main">Jump to content</a>
         <header>
             <nav aria-label="Primary" class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
@@ -20,15 +20,15 @@
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projekt</a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item" href="about.html">Über das Projekt</a>
+                                        <a class="dropdown-item" href="about.html">About the project</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="imprint.html">Impressum</a>
+                                        <a class="dropdown-item" href="imprint.html">Imprint</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="toc.html">Editionseinheiten</a>
+                                <a class="nav-link" href="toc.html">Texts</a>
                             </li>
                             <li class="nav-item dropdown disabled">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Register</a>
@@ -37,10 +37,10 @@
                                         <a class="dropdown-item" href="listkeyword.html">Keywords</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listperson.html">Personen</a>
+                                        <a class="dropdown-item" href="listperson.html">Persons</a>
                                     </li>
                                     <li>
-                                        <a class="dropdown-item" href="listplace.html">Orte</a>
+                                        <a class="dropdown-item" href="listplace.html">Places</a>
                                     </li>
                                 </ul>
                             </li>
@@ -48,10 +48,7 @@
                                 <a title="API" class="nav-link" href="api.xml">API</a>
                             </li>
                             <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="search.html">Suche</a>
-                            </li>
-                            <li class="nav-item">
-                                <a title="Suche" class="nav-link" href="noske-search.html">Noske-Suche</a>
+                                <a title="Suche" class="nav-link" href="search.html">Search</a>
                             </li>
                         </ul>
                     </div>

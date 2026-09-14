@@ -17,7 +17,7 @@
 
 
     <xsl:template match="/">
-        <xsl:variable name="doc_title" select="'Inhaltsverzeichnis'"/>
+        <xsl:variable name="doc_title" select="'Table of content'"/>
         <xsl:variable name="link" select="'toc.html'"/>
         <html class="h-100" lang="{$default_lang}">
             <head>
@@ -51,9 +51,10 @@
                         <table id="myTable">
                             <thead>
                                 <tr>
-                                    <th scope="col" tabulator-headerFilter="input" tabulator-formatter="html">Title</th>
+                                    <th scope="col" tabulator-headerFilter="input" tabulator-minWidth="350" tabulator-formatter="html">Title</th>
                                     <th scope="col" tabulator-headerFilter="input">Country</th>
                                     <th scope="col" tabulator-headerFilter="input">Date</th>
+                                    <th scope="col" tabulator-headerFilter="input">Keywords</th>
                                     <th scope="col" tabulator-headerFilter="input">ID</th>
                                 </tr>
                             </thead>
@@ -78,6 +79,12 @@
                                         </td>
                                         <td>
                                             <xsl:value-of select=".//tei:title[@type='date']"/>
+                                        </td>
+                                        <td>
+                                            <xsl:value-of
+                                                select="distinct-values(.//tei:rs[@type='keyword']/@ref)
+                                                ! replace(., '#', '')"
+                                                separator=", "/>
                                         </td>
                                         <td>
                                             <xsl:value-of select="$full_path"/>

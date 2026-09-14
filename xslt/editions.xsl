@@ -57,7 +57,7 @@
                             </li>
                             <li class="breadcrumb-item">
                                 <a href="toc.html">
-                                    <xsl:value-of select="'Inhaltsverzeichnis'"/>
+                                    <xsl:value-of select="'Table of content'"/>
                                 </a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
