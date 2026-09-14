@@ -4,7 +4,7 @@ import os
 import typesense
 from acdh_tei_pyutils.tei import TeiReader
 from acdh_tei_pyutils.utils import (
-    extract_fulltext,
+    extract_fulltext_with_spacing,
     get_xmlid,
     make_entity_label,
 )
@@ -49,9 +49,9 @@ current_schema = {
     "name": COLLECTION_NAME,
     "enable_nested_fields": True,
     "metadata": {
-        "owners": ["dse-static-cookiecutter"],
+        "owners": ["Peter Andorfer"],
         "description": "Used by https://github.com/csae8092/atheism-entangled-static",
-        "service_ids": [18716],
+        "service_ids": [29122],
     },
     "fields": [
         {"name": "id", "type": "string"},
@@ -76,8 +76,10 @@ for x in tqdm(files, total=len(files)):
     record = {}
     record["id"] = os.path.split(x)[-1].replace(".xml", "")
     record["rec_id"] = os.path.split(x)[-1].replace(".xml", "")
-    record["title"] = doc.any_xpath(".//tei:titleStmt/tei:title[1]")[0].text
-    record["full_text"] = extract_fulltext(body, tag_blacklist=tag_blacklist)
+    record["title"] = doc.any_xpath(".//tei:titleStmt/tei:title[@level='a']")[0].text
+    record["full_text"] = extract_fulltext_with_spacing(
+        body, tag_blacklist=tag_blacklist
+    )
 
     record["person_entities"] = []
     for y in doc.any_xpath(".//tei:back//tei:listPerson/tei:person[@xml:id]"):
@@ -97,28 +99,16 @@ for x in tqdm(files, total=len(files)):
         )[0]
         record["place_entities"].append(item)
 
-    record["org_entities"] = []
-    for y in doc.any_xpath(".//tei:back//tei:listOrg/tei:org[@xml:id]"):
+    record["keyword_entities"] = []
+    keywords = doc.any_xpath(".//tei:body//tei:rs[@type='keyword']/@ref")
+    for y in keywords:
+        label = y.replace("#", "")
         item = {}
-        item["id"] = get_xmlid(y)
-        item["label"] = make_entity_label(
-            y.xpath("./tei:orgName[1]", namespaces=namespaces)[0]
-        )[0]
-        record["org_entities"].append(item)
-
-    record["bibl_entities"] = []
-    for y in doc.any_xpath(".//tei:back//tei:listBibl/tei:bibl[@xml:id]"):
-        item = {}
-        item["id"] = get_xmlid(y)
-        item["label"] = extract_fulltext(
-            y.xpath("./tei:title", namespaces=namespaces)[0]
-        )
-        record["bibl_entities"].append(item)
+        item["id"] = label
+        item["label"] = label
+        record["keyword_entities"].append(item)
 
     records.append(record)
-    print(record)
-
-
 make_index = client.collections[COLLECTION_NAME].documents.import_(records)
 print(make_index)
 print("done with indexing")
